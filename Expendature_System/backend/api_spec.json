@@ -1,0 +1,37 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "methods": [
+    {
+      "method": "expense.create",
+      "params": {
+        "amount": "number",
+        "description": "string",
+        "category_id": "number",
+        "date": "string"
+      },
+      "returns": "object"
+    },
+    {
+      "method": "expense.get",
+      "params": {
+        "expense_id": "number"
+      },
+      "returns": "object"
+    },
+    {
+      "method": "expense.list",
+      "params": {
+        "user_id": "number",
+        "limit": "number",
+        "offset": "number"
+      },
+      "returns": "array"
+    },
+    {
+      "method": "category.list",
+      "params": {},
+      "returns": "array"
+    }
+  ]
+}
